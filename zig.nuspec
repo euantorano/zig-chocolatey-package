@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>zig</id>
+    <version>0.3.0</version>
+    <packageSourceUrl>https://github.com/euantorano/zig-chocolatey-package</packageSourceUrl>
+    <owners>Euan T</owners>
+
+    <title>zig (Install)</title>
+    <authors>Andrew Kelley</authors>
+    <projectUrl>https://ziglang.org</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/euantorano/zig-chocolatey-package/master/icons/zig-logo.png</iconUrl>
+    <copyright>Copyright (c) 2015 Andrew Kelley</copyright>
+    <licenseUrl>https://github.com/ziglang/zig/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/ziglang/zig</projectSourceUrl>
+    <docsUrl>https://ziglang.org/documentation/0.3.0/</docsUrl>
+    <mailingListUrl>https://groups.google.com/forum/#!forum/ziglang</mailingListUrl>
+    <bugTrackerUrl>https://github.com/ziglang/zig/issues</bugTrackerUrl>
+    <tags>zig development</tags>
+    <summary>A programming language designed for robustness, optimality, and clarity.</summary>
+    <description>Zig is an open-source programming language designed for robustness, optimality, and clarity.
+
+- **Robust** - behavior is correct even for edge cases such as out of memory.
+- **Optimal** - write programs the best way they can behave and perform.
+- **Clear** - precisely communicate your intent to the compiler and other programmers. The language imposes a low overhead to reading code.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
