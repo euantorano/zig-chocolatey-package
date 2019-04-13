@@ -26,6 +26,7 @@
 - **Optimal** - write programs the best way they can behave and perform.
 - **Clear** - precisely communicate your intent to the compiler and other programmers. The language imposes a low overhead to reading code.
     </description>
+    <releaseNotes>https://ziglang.org/download/0.4.0/release-notes.html</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
