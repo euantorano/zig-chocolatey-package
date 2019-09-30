@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName = 'zig'
-$packageVersion = '0.4.0'
+$packageVersion = '0.5.0'
 $packageZipFileName = "zig-windows-x86_64-$packageVersion"
 $packageDownloadUrl = "https://ziglang.org/download/$packageVersion/$packageZipFileName.zip"
 $packageChecksum = 'fbc3dd205e064c263063f69f600bedb18e3d0aa2efa747a63ef6cafb6d73f127'
