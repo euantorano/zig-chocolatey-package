@@ -3,9 +3,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zig</id>
-    <version>0.4.0</version>
+    <version>0.5.0</version>
     <packageSourceUrl>https://github.com/euantorano/zig-chocolatey-package</packageSourceUrl>
-    <owners>Euan T</owners>
+    <owners>Euan Torano</owners>
 
     <title>zig (Install)</title>
     <authors>Andrew Kelley</authors>
@@ -15,7 +15,7 @@
     <licenseUrl>https://github.com/ziglang/zig/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/ziglang/zig</projectSourceUrl>
-    <docsUrl>https://ziglang.org/documentation/0.4.0/</docsUrl>
+    <docsUrl>https://ziglang.org/documentation/0.5.0/</docsUrl>
     <mailingListUrl>https://lists.sr.ht/~andrewrk/ziglang</mailingListUrl>
     <bugTrackerUrl>https://github.com/ziglang/zig/issues</bugTrackerUrl>
     <tags>zig development</tags>
@@ -26,7 +26,7 @@
 - **Optimal** - write programs the best way they can behave and perform.
 - **Clear** - precisely communicate your intent to the compiler and other programmers. The language imposes a low overhead to reading code.
     </description>
-    <releaseNotes>https://ziglang.org/download/0.4.0/release-notes.html</releaseNotes>
+    <releaseNotes>https://ziglang.org/download/0.5.0/release-notes.html</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

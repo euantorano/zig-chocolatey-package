@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName = 'zig'
-$packageVersion = '0.4.0'
+$packageVersion = '0.5.0'
 $packageZipFileName = "zig-windows-x86_64-$packageVersion"
 $packageDownloadUrl = "https://ziglang.org/download/$packageVersion/$packageZipFileName.zip"
-$packageChecksum = 'fbc3dd205e064c263063f69f600bedb18e3d0aa2efa747a63ef6cafb6d73f127'
+$packageChecksum = '58141323db8d84a5af62746be5f9140bc161ee760ef33dc91a887bf9ac021976'
 $packageChecksumType = 'sha256'
 
 $zigRoot = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
