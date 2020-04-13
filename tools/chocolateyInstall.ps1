@@ -13,7 +13,7 @@ $packageChecksumType = 'sha256'
 $zigRoot = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 Install-ChocolateyZipPackage -PackageName "$packageName" `
-	-Url "$packageDownloadUrl32Bit" `
+    -Url "$packageDownloadUrl32Bit" `
     -Url64bit "$packageDownloadUrl" `
     -Checksum "$packageChecksum32Bit" `
     -ChecksumType "$packageChecksumType" `
