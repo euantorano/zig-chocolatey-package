@@ -29,7 +29,7 @@
     <releaseNotes>https://ziglang.org/download/0.9.1/release-notes.html</releaseNotes>
 
     <dependencies>
-      <dependency id="vcredist140" version="14.10.25008.0" />
+      <dependency id="vcredist140" version="14.30.30708" />
     </dependencies>
   </metadata>
   <files>
