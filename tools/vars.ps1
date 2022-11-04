@@ -1,0 +1,12 @@
+$packageName = 'zig'
+$packageVersion = '0.10.0'
+$packageZipFileName = "zig-windows-x86_64-0.10.0"
+$packageDownloadUrl = "https://ziglang.org/download/0.10.0/$packageZipFileName.zip"
+$packageChecksum = 'a66e2ff555c6e48781de1bcb0662ef28ee4b88af3af2a577f7b1950e430897ee'
+$packageZipFileName32Bit = "zig-windows-i386-0.10.0"
+$packageDownloadUrl32Bit = "https://ziglang.org/download/0.10.0/$packageZipFileName32Bit.zip"
+$packageChecksum32Bit = ''
+$packageZipFileNameAarch64 = "zig-windows-aarch64-0.10.0"
+$packageDownloadUrlAarch64 = "https://ziglang.org/download/0.10.0/$packageZipFileNameAarch64.zip"
+$packageChecksumAarch64 = '1bbda8d123d44f3ae4fa90d0da04b1e9093c3f9ddae3429a4abece1e1c0bf19a'
+$packageChecksumType = 'sha256'
