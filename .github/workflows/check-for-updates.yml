@@ -1,0 +1,34 @@
+name: Pack Chocolatey Package
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+
+jobs:
+  check-for-update:
+    environment: Chocolatey Community
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - id: check
+        name: Run script
+        continue-on-error: true
+        run: |
+          pwsh auto_update.ps1
+
+      - name: Create Pull Request
+        if: steps.check.conclusion == 'success'
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: Updated Zig version
+          title: '[Automatic] Updated Zig Version'
+          body: |
+            Updated the Zig version to the latest available version.
+          add-paths: |
+            tools/vars.ps1
+          delete-branch: true
+          branch-suffix: timestamp
+          branch: feature/update-zig
+          assignees: euantorano
+          reviewers: euantorano
