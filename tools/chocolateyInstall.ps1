@@ -1,22 +1,16 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName = 'zig'
-$packageVersion = '0.9.1'
+$packageVersion = '0.10.0'
 $packageZipFileName = "zig-windows-x86_64-$packageVersion"
 $packageDownloadUrl = "https://ziglang.org/download/$packageVersion/$packageZipFileName.zip"
-$packageChecksum = '443da53387d6ae8ba6bac4b3b90e9fef4ecbe545e1c5fa3a89485c36f5c0e3a2'
-$packageZipFileName32Bit = "zig-windows-i386-$packageVersion"
-$packageDownloadUrl32Bit = "https://ziglang.org/download/$packageVersion/$packageZipFileName32Bit.zip"
-$packageChecksum32Bit = '443da53387d6ae8ba6bac4b3b90e9fef4ecbe545e1c5fa3a89485c36f5c0e3a2'
+$packageChecksum = 'a66e2ff555c6e48781de1bcb0662ef28ee4b88af3af2a577f7b1950e430897ee'
 $packageChecksumType = 'sha256'
 
 $zigRoot = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 Install-ChocolateyZipPackage -PackageName "$packageName" `
-    -Url "$packageDownloadUrl32Bit" `
     -Url64bit "$packageDownloadUrl" `
-    -Checksum "$packageChecksum32Bit" `
-    -ChecksumType "$packageChecksumType" `
     -Checksum64 "$packageChecksum" `
     -ChecksumType64 "$packageChecksumType" `
     -UnzipLocation "$zigRoot"
