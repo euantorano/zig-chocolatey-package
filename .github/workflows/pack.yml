@@ -1,6 +1,13 @@
 name: Pack Chocolatey Package
 
-on: [push]
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   pack:
@@ -18,4 +25,6 @@ jobs:
         with:
           args: install zig --debug --verbose --source "'.;https://community.chocolatey.org/api/v2/'"
 
-
+      - name: Check Zig Version
+        run: |
+          zig version
