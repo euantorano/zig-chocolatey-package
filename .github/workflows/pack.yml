@@ -1,0 +1,26 @@
+name: Pack Chocolatey Package
+
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+
+jobs:
+  pack:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Pack
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: pack
+
+      - name: Install
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: install zig --debug --verbose --source "'.;https://community.chocolatey.org/api/v2/'"
+
+      - name: Check Zig Version
+        run: |
+          zig version
