@@ -1,4 +1,4 @@
-name: Pack Chocolatey Package
+name: Check For Updates
 
 on:
   schedule:
