@@ -7,6 +7,7 @@ on:
 
 jobs:
   pack:
+    environment: Chocolatey Community
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
@@ -24,3 +25,19 @@ jobs:
       - name: Check Zig Version
         run: |
           zig version
+
+      - name: Set Chocolatey API Key
+        uses: crazy-max/ghaction-chocolatey@v2
+        if: github.ref_type == 'tag'
+        env:
+          CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+        with:
+          args: apikey -y --key "$CHOCO_API_KEY" --source https://push.chocolatey.org/
+
+      - name: Push To Chocolatey
+        uses: crazy-max/ghaction-chocolatey@v2
+        if: github.ref_type == 'tag'
+        env:
+          PACKAGE_VERSION: ${{ github.ref_name }}
+        with:
+          args: push zig.$PACKAGE_VERSION.nupkg -s https://push.chocolatey.org/
