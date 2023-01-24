@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zig</id>
-    <version>0.10.0</version>
+    <version>0.10.1</version>
     <packageSourceUrl>https://github.com/euantorano/zig-chocolatey-package</packageSourceUrl>
     <owners>Euan Torano</owners>
 
