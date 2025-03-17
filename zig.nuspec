@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zig</id>
-    <version>0.13.0</version>
+    <version>0.14.0</version>
     <packageSourceUrl>https://github.com/euantorano/zig-chocolatey-package</packageSourceUrl>
     <owners>Euan Torano</owners>
 
@@ -11,11 +11,11 @@
     <authors>Zig contributors</authors>
     <projectUrl>https://ziglang.org</projectUrl>
     <iconUrl>http://cdn.rawgit.com/euantorano/zig-chocolatey-package/master/icons/zig-logo.png</iconUrl>
-    <copyright>Copyright (c) 2015-2024, Zig contributors</copyright>
-    <licenseUrl>https://github.com/ziglang/zig/blob/0.13.0/LICENSE</licenseUrl>
+    <copyright>Copyright (c) 2015-2025, Zig contributors</copyright>
+    <licenseUrl>https://github.com/ziglang/zig/blob/0.14.0/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/ziglang/zig</projectSourceUrl>
-    <docsUrl>https://ziglang.org/documentation/0.13.0/</docsUrl>
+    <docsUrl>https://ziglang.org/documentation/0.14.0/</docsUrl>
     <mailingListUrl>https://lists.sr.ht/~andrewrk/ziglang</mailingListUrl>
     <bugTrackerUrl>https://github.com/ziglang/zig/issues</bugTrackerUrl>
     <tags>zig development</tags>
@@ -26,7 +26,7 @@
 - **Optimal** - write programs the best way they can behave and perform.
 - **Clear** - precisely communicate your intent to the compiler and other programmers. The language imposes a low overhead to reading code.
     </description>
-    <releaseNotes>https://ziglang.org/download/0.13.0/release-notes.html</releaseNotes>
+    <releaseNotes>https://ziglang.org/download/0.14.0/release-notes.html</releaseNotes>
 
     <dependencies>
       <dependency id="vcredist140" version="14.32.31326" />
